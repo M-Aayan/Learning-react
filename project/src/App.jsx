@@ -1,11 +1,11 @@
-import Cards from "./components/Cards"
+import Cards from "./components/Cards section/Cards"
 
 const App = () => {
   
   const Events = [
   {
     id: "GBD99763JS",
-    date: "24/09/2024",
+    date: "24/09/2026",
     organizer: "Infinity Event Organizer",
     title: "Summer Music Festival",
     status: "Upcoming",
@@ -13,7 +13,7 @@ const App = () => {
   },
   {
     id: "EVT48291KM",
-    date: "05/10/2024",
+    date: "05/10/2026",
     organizer: "Global Event Co.",
     title: "Tech Innovation Summit",
     status: "Upcoming",
@@ -21,7 +21,7 @@ const App = () => {
   },
   {
     id: "EVT73156RP",
-    date: "12/10/2024",
+    date: "12/10/2026",
     organizer: "Creative Minds",
     title: "Design & Art Expo",
     status: "Pending",
@@ -29,7 +29,7 @@ const App = () => {
   },
   {
     id: "EVT29584LX",
-    date: "20/10/2024",
+    date: "20/10/2026",
     organizer: "Urban Events",
     title: "City Food Carnival",
     status: "Upcoming",
@@ -37,7 +37,7 @@ const App = () => {
   },
   {
     id: "EVT61843QN",
-    date: "02/11/2024",
+    date: "02/11/2026",
     organizer: "Future Tech Events",
     title: "AI & Robotics Conference",
     status: "Pending",
@@ -45,7 +45,7 @@ const App = () => {
   },
   {
     id: "EVT90427BZ",
-    date: "15/11/2024",
+    date: "15/11/2026",
     organizer: "Elite Sports Group",
     title: "International Sports Gala",
     status: "Upcoming",
@@ -53,7 +53,7 @@ const App = () => {
   },
   {
     id: "EVT35619HT",
-    date: "28/11/2024",
+    date: "28/11/2026",
     organizer: "SoundWave Productions",
     title: "Live Rock Concert",
     status: "Upcoming",
@@ -61,7 +61,7 @@ const App = () => {
   },
   {
     id: "EVT82746CW",
-    date: "10/12/2024",
+    date: "10/12/2026",
     organizer: "Business Network",
     title: "Startup Networking Event",
     status: "Pending",
@@ -69,7 +69,7 @@ const App = () => {
   },
   {
     id: "EVT54382VD",
-    date: "18/12/2024",
+    date: "18/12/2026",
     organizer: "Winter Events Ltd.",
     title: "Winter Wonderland",
     status: "Upcoming",
@@ -77,7 +77,7 @@ const App = () => {
   },
   {
     id: "EVT16935FS",
-    date: "31/12/2024",
+    date: "31/12/2026",
     organizer: "Infinity Event Organizer",
     title: "New Year Celebration",
     status: "Pending",
@@ -87,7 +87,8 @@ const App = () => {
   
   
   return (
-    <div className="parent">
+    <div className='p-2.5 flex flex-wrap bg-gray-200 sm:flex-nowrap items-center p-3'>
+      <h1 className="p-2 text-2xl font-medium">Your Events</h1>
       {Events.map((event)=>{
         return <Cards id={event.id} date={event.date} organizer={event.organizer} title={event.title} status={event.status} price={event.price} />
       })}
