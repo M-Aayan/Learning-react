@@ -1,21 +1,21 @@
 
 
-const Cards = () => {
+const Cards = ({id, date, organizer, title, status, price}) => {
     return (
         <div className="Card">
             <div className="card-top">
-                <p>GBD78865JS</p>
-                <p>24/08/2026</p>
+                <p> {id} </p>
+                <p> {date} </p>
             </div>
             <div className="card-content">
-                <p>Infinity Event Organizer</p>
-                <div class="title-row">
-                    <h2>Summer Music Festival</h2>
-                    <button>Upcoming</button>
+                <p> {organizer} </p>
+                <div className="title-row">
+                    <h2> {title} </h2>
+                    <button> {status} </button>
                 </div>
             </div>
             <div className="card-bottom">
-                <h4>$65</h4>
+                <h4>${price} </h4>
                 <button>View Details</button>
             </div>
         </div>
