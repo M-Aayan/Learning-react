@@ -1,6 +1,6 @@
 const LeftSection = () => {
     return (
-        <div className="p-10">
+        <div className="h-full">
             <h1 className="text-5xl font-bold pt-8">Manage Your Events</h1>
             <br />
             <h1 className="text-5xl font-bold">With <span className="text-Blue-Shade">Ease</span></h1>
