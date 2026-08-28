@@ -1,4 +1,5 @@
 import Navbar from "./components/navbar/navbar"
+import HeroSection from "./components/hero section/heroSection"
 import Cards from "./components/Cards section/Cards"
 
 
@@ -89,15 +90,16 @@ const App = () => {
 
 
   return (
-    <>
+    <div className="bg-bg">
     <Navbar />
+    <HeroSection />
     {/* <div className='p-2.5 flex flex-wrap bg-gray-200 sm:flex-nowrap items-center p-3'>
       <h1 className="p-2 text-2xl font-medium">Your Events</h1>
       {Events.map((event)=>{
         return <Cards id={event.id} date={event.date} organizer={event.organizer} title={event.title} status={event.status} price={event.price} />
       })}
     </div> */}
-    </>
+    </div>
   )
 }
 

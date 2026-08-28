@@ -2,7 +2,7 @@ import logo from "../../assets/logo.png";
 
 const Navbar = () => {
     return (
-        <div className="p-5 justify-between flex text-black items-center">
+        <div className="p-5 justify-between flex text-black items-center bg-white">
             <img src={logo} alt="Infinity Events Logo" height={50} width={150} className=""/>     
                 <ul className="flex gap-5 font-medium">
                     <li><a href="#" className="hover:border-b-2 border-Blue-Shade">Home</a></li>
@@ -15,7 +15,6 @@ const Navbar = () => {
                 <i className="ri-notification-line"></i>
                 <p className="h-8 w-8 bg-Blue-Shade text-white rounded-[50%] text-xl text-center cursor-pointer">A</p>
                 <p>Aayan</p>
-                <i class="ri-arrow-down-s-line"></i>
             </div>
         </div>
     )
