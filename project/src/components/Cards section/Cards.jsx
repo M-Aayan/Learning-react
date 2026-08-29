@@ -1,6 +1,6 @@
 const Cards = ({id, date, organizer, title, status, price}) => {
     return (
-        <div className="bg-white w-88 m-5 rounded-3xl">
+        <div className="bg-white w-100 m-5 rounded-3xl">
             <div className="p-5 flex items-center justify-between bg-Blue-Shade text-white text-[14px] rounded-tl-3xl rounded-tr-3xl">
                 <p> {id} </p>
                 <p> {date} </p>

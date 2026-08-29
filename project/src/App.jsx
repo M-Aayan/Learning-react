@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar/navbar"
 import HeroSection from "./components/hero section/heroSection"
 import Cards from "./components/Cards section/Cards"
+import EventPanel from "./components/create event panel/EventPanel"
 
 
 const App = () => {
@@ -91,16 +92,20 @@ const App = () => {
 
   return (
     <div className="bg-bg">
-    <Navbar />
-    <HeroSection />
+      <Navbar />
+      <HeroSection />
+
+      <div className='py-8 px-16 grid grid-cols-3'>
+        <h1 className="p-2 text-2xl font-medium col-span-full text-center">Your Events</h1>
+        {Events.map((event) => {
+          return <Cards id={event.id} date={event.date} organizer={event.organizer} title={event.title} status={event.status} price={event.price} />
+        })}
+      </div>
+
+      <EventPanel />
+
     </div>
   )
 }
 
 export default App
-{/* <div className='p-2.5 flex flex-wrap bg-gray-200 sm:flex-nowrap items-center p-3'>
-  <h1 className="p-2 text-2xl font-medium">Your Events</h1>
-  {Events.map((event)=>{
-    return <Cards id={event.id} date={event.date} organizer={event.organizer} title={event.title} status={event.status} price={event.price} />
-  })}
-</div> */}
