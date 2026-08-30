@@ -2,6 +2,7 @@ import Navbar from "./components/navbar/navbar"
 import HeroSection from "./components/hero section/heroSection"
 import Cards from "./components/Cards section/Cards"
 import EventPanel from "./components/create event panel/EventPanel"
+import Footer from "./components/Footer/Footer"
 
 
 const App = () => {
@@ -98,11 +99,12 @@ const App = () => {
       <div className='py-8 px-16 grid grid-cols-3'>
         <h1 className="p-2 text-2xl font-medium col-span-full text-center">Your Events</h1>
         {Events.map((event) => {
-          return <Cards id={event.id} date={event.date} organizer={event.organizer} title={event.title} status={event.status} price={event.price} />
+          return <Cards key={event.id} id={event.id} date={event.date} organizer={event.organizer} title={event.title} status={event.status} price={event.price} />
         })}
       </div>
 
       <EventPanel />
+      <Footer />
 
     </div>
   )
