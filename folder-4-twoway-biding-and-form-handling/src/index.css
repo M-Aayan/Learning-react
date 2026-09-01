@@ -1,0 +1,9 @@
+body{
+    background: #333;
+    color: white;
+}
+
+input, button{
+    padding: 10px 20px;
+    margin: 10px;
+}
