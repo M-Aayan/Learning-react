@@ -1,13 +1,11 @@
-import LeftSec from "./components/leftSection/LeftSec"
+import Section from "./components/section/Section"
 
 
 
 const App = () => {
   return (
-    <div  className="">
-      <div>
-        <LeftSec />
-      </div>
+    <div>
+      <Section />
     </div>
   )
 }
