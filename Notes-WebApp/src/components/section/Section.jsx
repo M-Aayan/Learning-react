@@ -3,8 +3,9 @@ import React from 'react'
 const Section = () => {
   return (
     <div>
-      <div className=' sm:m-10 w-full sm:w-1/2'>
-        <form className='flex flex-col gap-5 p-3'>
+      {/* right side jo ka forms handling ka lia h  */}
+      <div className='mt-4  sm:m-6 md:m-8 lg:m-10 w-full sm:w-1/2 md:w-3/5 xl:w-1/2'>
+        <form className='flex flex-col gap-5 p-4'>
           <h1 className='text-3xl font-medium p-3'>Add Notes</h1>
           <input type="text" placeholder='Enter Notes Title...' className='p-4 outline-2 rounded outline-purple-400 font-normal text-xl' />
           <textarea placeholder='Write your notes here...' className='bg-purple-100 outline-none p-5 rounded h-96' ></textarea>
