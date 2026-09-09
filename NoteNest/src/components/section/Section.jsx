@@ -12,7 +12,22 @@ const Section = () => {
         </form>
       </div>
       {/* left side jo ka notes show karne ka lia h */}
-      
+      <div className="w-full lg:w-1/2 lg:h-screen overflow-hidden">
+        <div className="flex flex-wrap gap-5 p-5 max-h-screen overflow-y-auto scrollbar-hide">
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+          <div className="w-full sm:w-[calc(50%-10px)] h-60 bg-black"></div>
+
+        </div>
+      </div>
+
     </div>
   )
 }
