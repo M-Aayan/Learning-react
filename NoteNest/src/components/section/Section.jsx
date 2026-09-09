@@ -13,7 +13,6 @@ const Section = () => {
       </div>
       {/* left side jo ka notes show karne ka lia h */}
       
-
     </div>
   )
 }
